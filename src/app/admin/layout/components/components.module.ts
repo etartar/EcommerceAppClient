@@ -4,6 +4,8 @@ import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
 import { SidebarComponent } from './sidebar/sidebar.component';
 import { RouterModule } from '@angular/router';
+import { UiModule } from 'src/app/ui/ui.module';
+import {MatListModule} from '@angular/material/list';
 
 
 
@@ -20,7 +22,9 @@ import { RouterModule } from '@angular/router';
   ],
   imports: [
     CommonModule,
-    RouterModule
+    RouterModule,
+    UiModule,
+    MatListModule
   ]
 })
 export class ComponentsModule { }
